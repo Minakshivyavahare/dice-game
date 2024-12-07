@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+   <div class="container">
+   
+    <div class="intro">
+        <h1>Welcome to the Dice Game!</h1>
+        <p>Get ready to test your luck and Strategy!!</p>
+        <button id="start">Start Game</button>
+    </div>
+    <div class="rules">
+        <h3>Before Start the Game Read the Instructions carefully :-</h3>
+        <ul>
+            <li>If roll dice sum 7 and 11 so you are winner.</li>
+            <li>If roll dice sum 2, 3 , 12 so you are loser.</li>
+            <li>If not any number out of this so again roll the dice.</li>
+        </ul>
+        <h3 >Result: <span id="total">0</span></h3>
+    </div>
+
+    <div class="box">
+        <div class="right-box">
+           
+            
+            <img src="./images/boy2.png" alt="boy1" class="boy1" id="boy1">
+            <div class="msg1" id="msg1">
+                <p>Hello John? how are you...</p>
+            </div>
+            <h3 id="dice1">0</h3>
+         <img src="./images/dice1.png" alt="dice" id="dice3">
+    
+        </div>
+        <div class="left-box">
+            
+            <img src="./images/dice1.png" alt="dice" id="dice4">
+            <h3 id="dice2">0</h3>
+            <img src="./images/boy1.png" alt="boy2" class="boy2" id="boy2">
+            <div class="msg2" id="msg2">
+                <p>Hello Peter? I'm fine...Let's Play the game...
+                    Click the Start Button..
+                </p>
+            </div>
+           
+        </div>
+        
+    </div>
+   
+    <div class="winner">
+        <button id="play">Play <i class="fa-solid fa-play"></i></button>
+    </div>
+
+
+   </div>
+    <script src="./main.js"></script>
+</body>
+</html>

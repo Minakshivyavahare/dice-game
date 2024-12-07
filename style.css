@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+   background-position: center;
+   background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    
+}
+/* ---------------------------intro----------------------- */
+.intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10px;
+}
+.intro h1{
+    padding-block: 8px;
+    font-size: 40px;
+    font-weight: 800;
+    color: blue;
+}
+.intro p{
+    padding-block: 9px;
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+}
+.intro button{
+    padding-block: 9px;
+    padding-inline: 10px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------------------- */
+.rules{
+    width: 50%;
+    height: auto;
+    padding-block: 10px;
+    display: none;
+    
+}
+.rules ul{
+    padding-block: 10px;
+    padding-inline: 15px;
+    font-weight: 900;
+}
+.rules h3:first-child{
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+}
+.rules h3:last-child{
+    padding-block: 5px;
+    color: red;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 200px;
+}
+/* --------------------------------------------------------------- */
+.box{
+    width: 70%;
+    height: 350px;
+    display: flex;
+    background-color: green;
+    border-radius: 20px;
+    padding-block: 20px;
+    justify-content: space-around;
+
+   
+    
+}
+.right-box{
+    width: 20%;
+    height: 90px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+.boy1{
+    height: 300px;
+    
+    display: none;
+   
+
+}
+.animate{
+    display: block;
+    animation: boy1 8s linear;
+}
+@keyframes boy1{
+    from {
+        transform: translateX(-300px); 
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+#dice3{
+    /* position: relative; */
+    position: fixed;
+ height: 90px;
+  bottom: 150px;
+  margin-left: 120px;
+  
+  transition: transform 0.8s ease-in-out;
+}
+#dice1{
+    position: relative;
+    bottom: 260px;
+    left: 150px;
+}
+.left-box{
+    width: 20%;
+    height: 200px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.boy2{
+   height: 300px;
+   /* display: none; */
+
+}
+.animate2{
+    display: block;
+    animation: boy2 8s linear;
+}
+@keyframes boy2{
+    from {
+        transform: translateX(500px); 
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+#dice4{
+  position: absolute;
+  height: 80px;
+  top:140px;
+  right: 130px;
+  transition: transform 0.8s ease-in-out;
+ 
+}
+#dice2{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+/* --------------------------------------------------------------- */
+.winner{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+   padding-top: 20px;
+}
+.winner button{
+    padding-inline: 30px;
+    padding-block: 9px;
+    color: blue;
+    border-radius: 10px;
+    font-weight: 700;
+    background: none;
+    border: 2px solid ;
+}
+/* ----------------------------------------------------------------- */
+.msg1{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    bottom: 260px;
+    left: 230px;
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 5px;
+    display: none;
+    
+}
+.msg1 p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.msg2{
+    width: 130px;
+    height: 90px;
+    position: fixed;
+    right: 210px;
+    top:230px;
+    display: none;
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 5px;
+    
+}
+.msg2 p{
+    font-size: 12px;
+    font-weight: 600;
+}
